@@ -8,9 +8,15 @@
 :root{
   --font-main: 'Open Sans', sans-serif;
 }
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-main);
   min-height: 200vh;
+  overflow-x: hidden;
 }
 
 li {

@@ -1,0 +1,129 @@
+.navDesktop {
+    padding: 1em;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navDesktop .logo {
+    max-width: 30px;
+}
+
+.navDesktop .menu {
+    grid-column: 2 / 4;
+}
+
+.navDesktop .menu ul {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navDesktop .menu ul li {
+    cursor: pointer;
+}
+
+.navDesktop .menu ul img {
+    width: 30px;
+}
+
+.navDesktop .containerSearchAndLang {
+    display: flex;
+}
+
+.navDesktop .langContainer {
+    display: flex;
+    gap: .2rem;
+}
+
+.navDesktop .langContainer p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+.navDesktop .menuBurger {
+    z-index: 5;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: end;
+}
+
+.navDesktop .menuBurger div:first-child {
+    width: fit-content;
+    min-width: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+    gap: .5em;
+}
+
+.navDesktop .menuBurger p {
+    font-size: 14px;
+}
+
+.navDesktop .ulDropdown {
+    padding: 3em 2em;
+    top: 0;
+    transition: 300ms;
+    right: -100%;
+    display: grid;
+    gap: 2rem;
+    position: absolute;
+    background-color: black;
+    width: 50%;
+    color: white;
+    font-size: 24px;
+}
+
+.navDesktop .ulActive {
+    right: 0;
+}
+
+.navDesktop .containerSearchAndLang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navDesktop .containerNetwork {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navDesktop .buttonSubscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: none;
+    background-color: #77D7DB;
+    max-width: 318px;
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.navDesktop .containerContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .navDesktop .menu ul {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
