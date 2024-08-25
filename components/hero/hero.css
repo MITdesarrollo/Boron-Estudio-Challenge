@@ -1,0 +1,96 @@
+.hero{
+    padding: 2rem .5rem;
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.description{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: left;
+}
+.description div {
+    width: fit-content;
+    display: inline-block;
+
+}
+.description span{
+    margin-right: 10px;
+}
+.bg-class{
+  display: block;
+    background-color: #77D7DB;
+    padding: 0 10px;
+}
+.svg-class{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+
+}
+.svg-class img {
+position: absolute;
+    bottom: -3px;
+    width: 100%;
+}
+@media(min-width: 375px){
+    .title{
+        font-size: 55px;
+    }
+    .description{
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px) {
+    .hero{
+        padding: 2rem 1.5rem;
+    }
+    .title{
+        font-size: 120px;
+    }
+    .description{
+        font-size: 45px;
+        line-height: 60px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .title{
+        font-size: 130px;
+    }
+    .description{
+        font-size: 60px;
+        line-height: 65px;
+    }
+}
+@media (min-width: 1280px) {
+    .title{
+        font-size: 140px;
+    }
+}
+@media (min-width: 1440px) {
+    .hero{
+        padding: 2rem 4rem;
+    }
+    .title{
+        font-size: 205px;
+    }
+    .description{
+        font-size: 64px;
+        line-height: 75px;
+    }
+}
+@media (min-width: 1600px) {
+
+    .title{
+        font-size: 205px;
+    }
+    .description{
+        font-size: 68px;
+        line-height: 85px;
+    }
+}
