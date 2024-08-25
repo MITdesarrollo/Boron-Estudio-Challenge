@@ -5,18 +5,23 @@ export const navItems = [
     'Novedades',
     'Contacto',
 ];
-export const lang = 'EN/ES'
+
+export const menuBurgerData = {
+    close: 'Cerrar',
+    open: 'Menu'
+}
+
 export const searchData = {
     search: {
-        pathW: "/searchWhite.png",
-        pathB: "/buscador.png",
+        pathWhite: "/searchWhite.png",
+        pathBlack: "/buscador.png",
         alt: "buscador"
     },
 }
 export const imagesNav = {
     logo: {
-        pathW: "/logo.png",
-        pathB: "/logoWhite.png",
+        pathWhite: "/logoWhite.png",
+        pathBlack: "/logo.png",
         pathDesktop: "/logoDesktop.png",
         alt: "logo boron"
     },
@@ -26,20 +31,31 @@ export const imagesNav = {
         pathClose: "/close.png",
         alt: "menu"
     },
-
 }
 
 export const network = {
+    button: {
+      text: 'SUSCRIBITE A NUESTRO NEWSLETER'
+    },
+    emailContact: {
+        text: 'info@boronstudio.com'
+    },
     arrow: {
         path: '/arrow.png',
         alt: "flecha"
     },
     x: {
-        path: "/x.png",
+        path: "/twitter.svg",
         alt: "x"
     },
     youtube: {
-        path: "/youtube.png",
+        path: "/youtube.svg",
         alt: "youtube"
     },
+};
+
+export const langData = {
+    en: 'EN',
+    slash: '/',
+    es: 'ES'
 }

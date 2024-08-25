@@ -1,0 +1,14 @@
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .langActive {
+    transition: 100ms;
+    font-weight: bold;
+}
+
+header .backgroundBlack {
+    background-color: black;
+}
