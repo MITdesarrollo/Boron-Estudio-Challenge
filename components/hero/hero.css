@@ -1,5 +1,6 @@
 .hero{
     padding: 2rem .5rem;
+    margin-top: 3rem;
 }
 .title{
     font-size: 50px;
@@ -14,7 +15,6 @@
 .description div {
     width: fit-content;
     display: inline-block;
-
 }
 .description span{
     margin-right: 10px;
@@ -46,7 +46,7 @@ position: absolute;
 }
 @media (min-width: 768px) {
     .hero{
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem 4rem 1.5rem;
     }
     .title{
         font-size: 120px;
@@ -54,11 +54,13 @@ position: absolute;
     .description{
         font-size: 45px;
         line-height: 60px;
-
     }
 }
 
 @media (min-width: 1024px) {
+    .hero{
+        padding: 2rem 1.5rem 5rem 1.5rem;
+    }
     .title{
         font-size: 130px;
     }
@@ -72,10 +74,12 @@ position: absolute;
         font-size: 140px;
     }
 }
+
 @media (min-width: 1440px) {
     .hero{
-        padding: 2rem 4rem;
+        padding: 2rem 2.5rem 6rem 2.5rem;
     }
+
     .title{
         font-size: 205px;
     }
@@ -85,7 +89,9 @@ position: absolute;
     }
 }
 @media (min-width: 1600px) {
-
+    .hero{
+        padding: 2rem 1.5rem 7rem 1.5rem;
+    }
     .title{
         font-size: 205px;
     }

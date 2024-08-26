@@ -15,10 +15,54 @@ html {
 
 body {
   font-family: var(--font-main);
-  min-height: 200vh;
   overflow-x: hidden;
 }
 
 li {
   list-style: none;
 }
+.aboutUs{
+ padding: 2rem 1rem;
+  background-color: #FF5E43;
+}
+.aboutUs p{
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .aboutUs{
+    padding: 2rem 2rem;
+    background-color: #FF5E43;
+  }
+  .aboutUs p{
+    font-size: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutUs p{
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .aboutUs p{
+    font-size: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  .aboutUs{
+    padding: 5rem 6rem;
+  }
+  .aboutUs p{
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .aboutUs p{
+    font-size: 74px;
+  }
+}
+
+
+
