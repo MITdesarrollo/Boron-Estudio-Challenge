@@ -1,0 +1,1 @@
+const imgLeft = "/imgReviews.png"

@@ -13,13 +13,13 @@ export const slider2 = [
         text:"Tecnología"
     },
     {
-        image:"/imgInnovacion2.png",
+        image:"/imgInnovacion2.jpg",
         text:"Innovación"
     }
 ]
 export const slider3 = [
     {
-        image: "/imgUru.png",
+        image: "/imgUru1.png",
         text:"Uruguay"},
     {
         image:"/imgUru2.png",

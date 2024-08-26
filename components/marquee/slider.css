@@ -1,43 +1,59 @@
 .slider {
     width: 100%;
-    max-width: 1536px;
     margin-inline: auto;
     position: relative;
-    height: 400px;
+    height: 110px;
     overflow: hidden;
+    mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0)
+    );
 }
 
 .slider-container {
     display: flex;
     gap: 20px;
     position: absolute;
-    height: 200px;
     left: 0;
-    animation: scroll 30s linear infinite;
+    animation: scrollSliderContainer 30s linear infinite;
 }
-.slider-container2 {
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    top: 50%;
-    height: 200px;
-    left: 0;
-    animation: scroll2 30s linear infinite;
-}
-@keyframes scroll2 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(50%);
-    }
-}
-@keyframes scroll {
+
+
+@keyframes scrollSliderContainer {
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+.slider-container2 {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+    animation: scrollSliderContainer2 30s linear infinite;
+}
+
+.slider-container3 {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    animation: scrollSliderContainer 30s linear infinite;
+}
+
+@keyframes scrollSliderContainer2 {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -58,4 +74,52 @@
 .item p {
    font-weight: bold;
     font-size: 42px;
+}
+
+@media (min-width: 768px) {
+    .slider {
+        height: 140px;
+    }
+    .item img {
+        width: 200px;
+    }
+    .item p {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slider {
+        height: 160px;
+    }
+    .item img {
+        width: 230px;
+    }
+    .item p {
+        font-size: 60px;
+    }
+}
+@media (min-width: 1280px) {
+    .slider {
+        height: 180px;
+    }
+    .item img {
+        width: 240px;
+    }
+    .item p {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .slider {
+        height: 320px;
+    }
+    .item img {
+        width: 450px;
+        height: 300px;
+    }
+    .item p {
+        font-size: 132px;
+    }
 }

@@ -1,0 +1,198 @@
+.carrusel{
+    display: flex;
+    flex-direction: column;
+}
+.carrusel .imageLeft{
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-container {
+    flex: 1;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1DA1F2;
+    position: relative
+}
+.carousel-item {
+    display: none;
+    padding: 20px;
+}
+.carousel-item.active {
+    display: block;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    align-items: start;
+    gap: 20px;
+}
+.content h2{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 1rem;
+}
+.titleBoron{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.iconTwitter{
+    width: 20px;
+}
+.titleBoron h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+.titleBoron h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.text h5{
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+.text span{
+    color: white;
+}
+.text p{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    line-height: 24px;
+}
+.dots {
+    margin-top: 20px;
+    padding-bottom: 2rem;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #eeeded;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #000000;
+}
+.arrow {
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+.arrow:hover{
+      background-color: white;
+     border-radius: 50%;
+}
+
+.arrow-left {
+    left: 50px;
+    background-position: center;
+    background-image: url('/arrowLeft.png');
+}
+.arrow-left:hover{
+    background-color: white;
+    border-radius: 50%;
+    background-size: 50%;
+}
+.arrow-right {
+    right: 50px;
+    background-position: center;
+    background-image: url('/arrowRight.png');
+}
+.arrow-right:hover{
+    background-color: white;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+@media (min-width: 768px) {
+    .carrusel{
+       flex-direction: row-reverse;
+        height: 500px;
+    }
+    .carrusel .imageLeft, .carousel-container {
+        flex: 0 0 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .dots {
+        display: none;
+    }
+    .arrow {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .carrusel{
+        height: 600px;
+    }
+
+}
+@media (min-width: 1440px) {
+    .carrusel{
+        height: 100%;
+    }
+    .content{
+        padding: 4rem 5rem 0 5rem;
+        gap: 4rem;
+    }
+    .content h2{
+        font-size: 16px;
+    }
+
+    .titleBoron h3{
+        font-size: 42px;
+    }
+    .text p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .arrow-left {
+        left: 100px;
+    }
+    .arrow-right {
+        right: 100px;
+    }
+}
+@media (min-width: 1700px) {
+
+    .content h2{
+        font-size: 18px;
+    }
+
+    .titleBoron h3{
+        font-size: 46px;
+    }
+    .text p{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .arrow-left {
+        left: 120px;
+    }
+    .arrow-right {
+        right: 120px;
+    }
+}
