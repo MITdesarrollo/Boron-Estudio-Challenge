@@ -1,6 +1,7 @@
 import {imagesNav, langData, navItems, searchData} from "./data/data.js";
 import {handleSelectEN, handleSelectES} from "./handlers/handleChangeLang.js";
 import {handleNavOnScroll} from "./handlers/handleNavOnScroll.js";
+import {handleOpenNavMobile} from "./handlers/handleOpenNavMobile.js";
 
 const nav = document.getElementById('nav');
 export const createDesktopNav = () => {

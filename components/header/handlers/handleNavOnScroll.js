@@ -27,6 +27,13 @@ export function handleNavOnScroll ({menu, nav, search, langContainer, logo })  {
         aDropdown.textContent = navItem;
         liDropdown.appendChild(aDropdown);
         ulDropdown.appendChild(liDropdown);
+
+        liDropdown.addEventListener('click', () => handleOpenNavDesktop({
+            menuImage,
+            menuText,
+            ulDropdown
+        }))
+
     });
     containerSearchAndLang.append(search, langContainer)
     ulDropdown.append(containerSearchAndLang, containerNetwork);

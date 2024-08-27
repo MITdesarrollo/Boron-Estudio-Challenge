@@ -38,7 +38,9 @@ export const createMobileNav = () => {
         liDropdown.appendChild(aDropdown);
         ulDropdown.appendChild(liDropdown);
 
-        liDropdown.addEventListener("click", () => handleOpenNavMobile(ulDropdown, nav))
+        liDropdown.addEventListener("click", () => handleOpenNavMobile({
+            logo, menuImage, nav, ulDropdown, menuText
+        }))
     });
 
     ulDropdown.append(containerSearchAndLang, containerNetwork);
