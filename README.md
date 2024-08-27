@@ -15,11 +15,13 @@ Ejecución del proyecto:
 Bash
 pnpm start
 
+![image](https://github.com/user-attachments/assets/81668bd5-a66c-4956-8b43-0a616208aad6)
 
-# Descripción del Proyecto
+
+# Descripción del Proyecto 🚀
 ## Este proyecto fue desarrollado como respuesta al challenge [Nombre del challenge]. Se buscó crear una solución que cumpliera con todos los requisitos establecidos, priorizando la performance y la accesibilidad.
 
-### Tecnologías utilizadas:
+### Tecnologías utilizadas 🛠️ :
 
 JavaScript: Se utilizó JavaScript moderno para la manipulación del DOM y la creación de componentes dinámicos.
 HTML: La estructura HTML fue generada principalmente con JavaScript para lograr una mayor flexibilidad y permitir la creación de interfaces complejas.
