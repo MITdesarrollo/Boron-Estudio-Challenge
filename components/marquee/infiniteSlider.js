@@ -6,7 +6,7 @@ export const createSlider = ({
                       }) => {
     const slider = document.querySelector(`#${containerClassName}`);
 
-    console.log(sliderContainer)
+
     sliderContainer.classList.add(className);
 
     let counter = 1;
