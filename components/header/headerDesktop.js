@@ -15,6 +15,7 @@ export const createDesktopNav = () => {
 
     nav.append(logo, menu);
     menu.append(menuUl);
+
     navItems.forEach(navItem => {
         const liDropdown = document.createElement('li');
         const aDropdown = document.createElement('a');
@@ -22,6 +23,7 @@ export const createDesktopNav = () => {
         liDropdown.appendChild(aDropdown);
         menuUl.appendChild(liDropdown);
     });
+
     menuUl.append(langContainer, search);
     langContainer.append(en, slash, es);
 
