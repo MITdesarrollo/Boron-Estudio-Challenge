@@ -1,7 +1,7 @@
 .containerGeneral {
     display: grid;
     grid-template-rows: auto auto;
-    background-color: #77D7DB;
+    background-color: var(--color-primary);
 }
 
 .containerText {

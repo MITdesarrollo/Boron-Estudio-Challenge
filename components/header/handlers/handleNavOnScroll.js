@@ -24,9 +24,19 @@ export function handleNavOnScroll ({menu, nav, search, langContainer, logo })  {
     navItems.forEach(navItem => {
         const liDropdown = document.createElement('li');
         const aDropdown = document.createElement('a');
-        aDropdown.textContent = navItem;
+        aDropdown.textContent = navItem.text;
+        aDropdown.href = navItem.href;
         liDropdown.appendChild(aDropdown);
         ulDropdown.appendChild(liDropdown);
+
+        aDropdown.classList.add("aDropdownMobile");
+
+        liDropdown.addEventListener('click', () => handleOpenNavDesktop({
+            menuImage,
+            menuText,
+            ulDropdown
+        }))
+
     });
     containerSearchAndLang.append(search, langContainer)
     ulDropdown.append(containerSearchAndLang, containerNetwork);

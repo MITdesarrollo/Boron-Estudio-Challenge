@@ -1,9 +1,10 @@
+
 export const navItems = [
-    'Acerca de',
-    'Proyectos',
-    'Repositorio',
-    'Novedades',
-    'Contacto',
+    { text: 'Acerca de', href: '#aboutAs' },
+    { text: 'Proyectos', href: '#slider' },
+    { text: 'Repositorio', href: '#repository' },
+    { text: 'Novedades', href: '#newsContainer' },
+    { text: 'Contacto', href: '#footer' },
 ];
 
 export const menuBurgerData = {

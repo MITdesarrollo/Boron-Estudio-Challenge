@@ -1,1 +1,0 @@
-const imgLeft = "/imgReviews.png"
