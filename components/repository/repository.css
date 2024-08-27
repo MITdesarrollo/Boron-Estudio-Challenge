@@ -1,0 +1,94 @@
+.containerGeneralRepository{
+    padding: 2rem 2rem 5rem 2rem;
+}
+.containerDescriptionRepository{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    align-items: center;
+    gap: 10px;
+}
+.titleRepository{
+    font-size: 42px;
+    font-weight: bold;
+}
+.subtitleRepository{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    width: fit-content;
+}
+.ulElement{
+    border-bottom: 1px solid black;
+}
+
+.liElement{
+    border-top: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: bolder;
+    position: relative;
+}
+.hoverImgElement{
+    position: absolute;
+    top: -50%;
+    display: none;
+    z-index: 50;
+}
+
+.imgElement{
+    width: 24px;
+    height: auto;
+}
+.imgElement:hover{
+    width: 20px;
+    content: url('/nextWhite.svg');
+}
+.containerImg:hover .imgElement{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: .5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+    .liElement:hover .hoverImgElement {
+        display: block;
+    }
+    .containerDescriptionRepository{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .titleRepository{
+        font-size: 52px;
+    }
+    .liElement{
+        font-size: 32px;
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .titleRepository{
+        font-size: 72px;
+    }
+    .subtitleRepository{
+         font-size: 16px;
+        width: 206px;
+        text-align: left;
+     }
+    .liElement{
+        font-size: 42px;
+        padding-left: 2rem;
+    }
+}

@@ -1,5 +1,5 @@
 import {createSlider} from "./infiniteSlider.js";
-import {slider1, slider2, slider3} from "./data.js";
+import {slider1, slider2, slider3} from "./data/data.js";
 
 const sliderContainer = document.createElement("div");
 const sliderContainer2 = document.createElement("div");

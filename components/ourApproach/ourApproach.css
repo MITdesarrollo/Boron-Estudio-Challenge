@@ -1,7 +1,6 @@
 .containerGeneral {
     display: grid;
     grid-template-rows: auto auto;
-    grid-gap: 20px;
     background-color: #77D7DB;
 }
 
@@ -16,6 +15,7 @@
 .preTitle {
     font-size: 14px;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 
 .descriptionText {

@@ -1,4 +1,4 @@
-import {descriptionText, img, preTitleText} from "./data.js";
+import {descriptionText, img, preTitleText} from "./data/data.js";
 
 const approach = document.querySelector(".approach");
 

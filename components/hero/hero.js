@@ -1,5 +1,9 @@
-import {content, svgPaths, title} from "./data.js";
-import {description, hero, titlePrincipal} from "./domElements.js";
+import {content, svgPaths, title} from "./data/data.js";
+
+
+export const hero = document.querySelector(".hero");
+export const titlePrincipal = document.createElement("h1");
+export const description = document.createElement("p");
 
 let nextSvgIndex = 0;
 let div = null;
