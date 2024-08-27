@@ -21,7 +21,7 @@
 }
 .bg-class{
   display: block;
-    background-color: #77D7DB;
+    background-color: var(--color-primary);
     padding: 0 10px;
 }
 .svg-class{

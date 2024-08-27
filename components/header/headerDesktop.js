@@ -1,7 +1,7 @@
 import {imagesNav, langData, navItems, searchData} from "./data/data.js";
 import {handleSelectEN, handleSelectES} from "./handlers/handleChangeLang.js";
 import {handleNavOnScroll} from "./handlers/handleNavOnScroll.js";
-import {handleOpenNavMobile} from "./handlers/handleOpenNavMobile.js";
+
 
 const nav = document.getElementById('nav');
 export const createDesktopNav = () => {
@@ -20,9 +20,12 @@ export const createDesktopNav = () => {
     navItems.forEach(navItem => {
         const liDropdown = document.createElement('li');
         const aDropdown = document.createElement('a');
-        aDropdown.textContent = navItem;
+        aDropdown.textContent = navItem.text;
+        aDropdown.href = navItem.href;
         liDropdown.appendChild(aDropdown);
         menuUl.appendChild(liDropdown);
+
+        aDropdown.classList.add("aDropdownDesktop");
     });
 
     menuUl.append(langContainer, search);

@@ -7,6 +7,13 @@
 }
 :root{
   --font-main: 'Open Sans', sans-serif;
+
+  --color-primary: #77D7DB;
+  --color-secondary: #FF5E43;
+  --color-blue: #1DA1F2;
+  --color-ligthBlue: #40B5E0;
+  --color-greenLigth: #44D19D;
+  --color-yellow: #FEDA3C;
 }
 
 html {
@@ -23,7 +30,7 @@ li {
 }
 .aboutUs{
  padding: 2rem 1rem;
-  background-color: #FF5E43;
+  background-color: var(--color-secondary);
 }
 .aboutUs p{
   font-size: 24px;
@@ -32,7 +39,7 @@ li {
 @media (min-width: 768px) {
   .aboutUs{
     padding: 2rem 2rem;
-    background-color: #FF5E43;
+    background-color: var(--color-secondary);
   }
   .aboutUs p{
     font-size: 34px;

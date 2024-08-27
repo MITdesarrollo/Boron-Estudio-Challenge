@@ -29,10 +29,10 @@
  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
  transition: clip-path 0.5s ease-in-out;
 }
-.card:nth-child(1) .cardContent { background-color: #77D7DB; }
-.card:nth-child(2) .cardContent { background-color: #77D7DB; }
-.card:nth-child(3) .cardContent { background-color: #44D19D; }
-.card:nth-child(4) .cardContent { background-color: #FEDA3C; }
+.card:nth-child(1) .cardContent { background-color: var(--color-ligthBlue); }
+.card:nth-child(2) .cardContent { background-color: var(--color-primary); }
+.card:nth-child(3) .cardContent { background-color: var(--color-greenLigth); }
+.card:nth-child(4) .cardContent { background-color: var(--color-yellow); }
 .containerPreTitle {
  display: flex;
  justify-content: space-between;

@@ -34,9 +34,13 @@ export const createMobileNav = () => {
     navItems.forEach(navItem => {
         const liDropdown = document.createElement('li');
         const aDropdown = document.createElement('a');
-        aDropdown.textContent = navItem;
+        aDropdown.textContent = navItem.text;
+        aDropdown.href = navItem.href;
+
         liDropdown.appendChild(aDropdown);
         ulDropdown.appendChild(liDropdown);
+
+        aDropdown.classList.add("aDropdownMobile");
 
         liDropdown.addEventListener("click", () => handleOpenNavMobile({
             logo, menuImage, nav, ulDropdown, menuText

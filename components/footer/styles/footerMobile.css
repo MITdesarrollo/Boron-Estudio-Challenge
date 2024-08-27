@@ -39,7 +39,7 @@
     justify-content: center;
     gap: 1rem;
     border: none;
-    background-color: #77D7DB;
+    background-color: var(--color-primary);
     max-width: 318px;
     width: 100%;
     height: 60px;
