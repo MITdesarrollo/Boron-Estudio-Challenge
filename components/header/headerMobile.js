@@ -30,13 +30,17 @@ export const createMobileNav = () => {
     nav.append(logo, menuBurger, ulDropdown);
     menuBurgerSubContainer.append(menuText, menuImage);
     menuBurger.append(menuBurgerSubContainer);
+
     navItems.forEach(navItem => {
         const liDropdown = document.createElement('li');
         const aDropdown = document.createElement('a');
         aDropdown.textContent = navItem;
         liDropdown.appendChild(aDropdown);
         ulDropdown.appendChild(liDropdown);
+
+        liDropdown.addEventListener("click", () => handleOpenNavMobile(ulDropdown, nav))
     });
+
     ulDropdown.append(containerSearchAndLang, containerNetwork);
     containerSearchAndLang.append(search, langContainer);
     langContainer.append(en, slash, es);
